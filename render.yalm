@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: free-fire-liker-api
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 16.15.0
+      - key: RENDER
+        value: true
+    plan: free
